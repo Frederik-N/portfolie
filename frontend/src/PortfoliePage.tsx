@@ -11,7 +11,6 @@ import { css, jsx } from '@emotion/core';
 export const PortfoliePage = () => {
   return (
     <Fragment>
-      <Page />
       <h1
         css={css`
           left: 50%;

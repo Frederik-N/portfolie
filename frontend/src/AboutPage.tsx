@@ -1,7 +1,6 @@
 import React from 'react';
 import { Fragment } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Page } from './Page';
 import cv from './pictures/cv.jpg';
 import { animated, useSpring } from 'react-spring';
 /** @jsxRuntime classic */
@@ -16,7 +15,6 @@ export const AboutPage = () => {
   });
   return (
     <Fragment>
-      <Page />
       <animated.div
         style={animation}
         css={css`

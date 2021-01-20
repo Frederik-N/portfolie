@@ -17,7 +17,7 @@ export const TransitionAnimation = () => {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 1 },
-    config: config.molasses,
+    config: { duration: 2000 },
   });
 
   useEffect(() => {
@@ -32,13 +32,13 @@ export const TransitionAnimation = () => {
         return (
           <animated.h1
             style={props}
-            key={key}
             css={css`
               background-size: cover;
               background-position: center;
               will-change: opacity;
               margin: 0 5px 24px;
               font-family: 'Libre Baskerville', serif;
+              font-size: 2vw;
             `}
           >
             {pages[item]}

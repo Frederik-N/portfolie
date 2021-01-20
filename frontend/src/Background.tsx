@@ -14,8 +14,9 @@ export const Background = () => {
       <div
         css={css`
           background-image: url(${woodbg});
+          height: 100vh;
+          background-position: center;
           background-repeat: no-repeat;
-          height: 800px;
           background-size: cover;
           opacity: 0.7;
         `}

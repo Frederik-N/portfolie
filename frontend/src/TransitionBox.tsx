@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
@@ -17,8 +17,7 @@ export const TransitionBox = () => {
       style={animation}
       className="container"
       css={css`
-        height: 150px;
-        width: 550px;
+        width: auto;
         background-color: #444b44;
         color: white;
         text-align: center;
@@ -32,9 +31,9 @@ export const TransitionBox = () => {
         box-shadow: 50px 50px 10px black;
       `}
     >
-      <div>
+      <Fragment>
         <TransitionAnimation />
-      </div>
+      </Fragment>
     </animated.div>
   );
 };
